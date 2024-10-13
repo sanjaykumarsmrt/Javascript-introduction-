@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        .container {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#display-table {
+    width: auto;
+}
+
+#submit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+#delete-btn {
+    background-color: #ff0000;
+    color: white;
+}
+
+@media (max-width: 920px) and (min-width: 280px) {
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 525px) and (min-width: 280px) {
+    body {
+        background-color:  #f0f0f0;
+    }
+    .container {
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+        width: 100%;
+        overflow-x: auto; 
+    }
+    
+    #display-table {
+        width: auto;
+    }
+    
+}
+
+a{
+        text-decoration: none;
+        color: blue;
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+    a:hover{
+        color: red;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Student Form</h1>
+        <table id="student-table" border="1" cellpadding="15px">
+            <tr>
+                <th>Name</th>
+                <th><input type="text" id="name-input"></th>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <th><input type="number" id="age-input"></th>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <th><input type="text" id="gender-input"></th>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <th><input type="text" id="course-input"></th>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <th><input type="email" id="email-input"></th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button id="submit-btn" onclick="handleSubmit()">Submit</button>
+                </th>
+            </tr>
+        </table>
+        <table id="display-table" border="1" cellpadding="15px" >
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <a href="index2.html">Age Category</a>
+    <a href="index3.html">Table Generator</a>
+    <a href="index.html">Grade Checker</a>
+    <a href="index5.html">To Do List</a>
+    <script src="main4.js"></script>
+</body>
+</html>
